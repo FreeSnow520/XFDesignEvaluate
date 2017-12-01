@@ -129,6 +129,6 @@ weakSelf.evalueTopBgView.titlesArr = weakSelf.tagNameArray[(int)button.tag - 100
 
 ```
 
-![image]( [https://github.com/FreeSnow520/XFDesignEvaluate/blob/master/imageExmp.gif])
+![image](https://github.com/FreeSnow520/XFDesignEvaluate/blob/master/imageExmp.gif)
 
 
