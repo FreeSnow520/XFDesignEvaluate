@@ -20,5 +20,7 @@
 @property (nonatomic, copy) void (^infoButton)(XFEvaluateRank * button); /**< 完成回调信息 */
 @property (nonatomic, copy) NSArray <NSArray *>*  imgArr; /**< 图片 */
 @property (nonatomic, assign) BOOL  isSingleSelected; /**< 默认为开启单选（YES）  NO为选择本身及之前所有 */
+//初始化
+-(instancetype)initWithFrame:(CGRect)frame images:(NSArray <NSArray *>*)imagsArray;
 -(void)addSubButtons;/**< 添加buttons 5 */
 @end

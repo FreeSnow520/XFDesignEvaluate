@@ -59,7 +59,7 @@
     self.totalEvaLabel.textColor = [UIColor redColor];
     self.totalEvaLabel.textAlignment = NSTextAlignmentCenter;
     
-    XFEvaluateView * evaView = [[XFEvaluateView alloc] initWithFrame:CGRectMake(0, 53.5 - 7.5, [UIScreen mainScreen].bounds.size.width, 50)];
+    XFEvaluateView * evaView = [[XFEvaluateView alloc] initWithFrame:CGRectMake(0, 53.5 - 7.5, [UIScreen mainScreen].bounds.size.width, 50) images:nil];
     evaView.isSingleSelected = YES;
     __weak typeof(self) weakSelf = self;
     evaView.infoButton = ^(XFEvaluateRank *button) {

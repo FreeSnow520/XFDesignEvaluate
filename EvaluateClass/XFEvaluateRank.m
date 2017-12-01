@@ -38,8 +38,21 @@
 - (void)btnClicked{
     if (!self.selected) {
         self.selected = YES;
+        [self initIBeaconAnimate];
     }
     self.btnSelected(self);
+}
+
+
+-(void)initIBeaconAnimate{
+    CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
+    animation.duration = 0.3;
+    animation.repeatCount = 1;
+    animation.autoreverses = YES;
+    
+    animation.fromValue = [NSNumber numberWithFloat:1.0];
+    animation.toValue = [NSNumber numberWithFloat:1.4];
+    [self.layer addAnimation:animation forKey:@"scale-layer"];
 }
 
 #pragma mark - Setter Methods

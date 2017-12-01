@@ -45,6 +45,7 @@
         imgBtn.tag = 100 + i;
         imgBtn.unselectImage = [UIImage imageNamed:_imgArr[i][0]];
         imgBtn.selectImage = [UIImage imageNamed:_imgArr[i][1]];
+        
         __weak typeof(self) weakSelf = self;
         imgBtn.btnSelected = ^(XFEvaluateRank *button) {
             //1. 反选---只有一个选中
